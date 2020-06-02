@@ -1,0 +1,13 @@
+Jim Carrey	http://www.imdb.com/name/nm0000120/
+Johny Depp	http://www.imdb.com/name/nm0000136/
+Jack Nicholson	http://www.imdb.com/name/nm0000197/
+Robert De Niro	http://www.imdb.com/name/nm0000134/
+Al Pacino	http://www.imdb.com/name/nm0000199/
+Anthony Hopkins	http://www.imdb.com/name/nm0000164/
+Brad Pitt	http://www.imdb.com/name/nm0000093/
+Clint Eastwood	http://www.imdb.com/name/nm0000142/
+Leonardo DiCaprio	http://www.imdb.com/name/nm0000138/
+Kevin Spacey	http://www.imdb.com/name/nm0000228/
+Nicolas Cage	http://www.imdb.com/name/nm0000115/
+Tom Cruise	http://www.imdb.com/name/nm0000129/
+Liam Neeson	http://www.imdb.com/name/nm0000553/

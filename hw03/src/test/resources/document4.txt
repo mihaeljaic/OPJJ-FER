@@ -1,0 +1,3 @@
+Random text
+{$FOR i 3 2$}
+Random text2.

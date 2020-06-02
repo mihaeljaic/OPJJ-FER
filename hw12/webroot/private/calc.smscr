@@ -1,0 +1,20 @@
+{$= "text/html" @setMimeType $}
+<html>
+	<body>
+		<p align="center"><b>Addition</b></p>
+		<table border="1" align="center">
+			<tr>
+				<td>a</td>
+				<td>{$= "a" 1 @tparamGet$}</td>
+			</tr>
+			<tr>
+				<td>b</td>
+				<td>{$= "b" 2 @tparamGet$}</td>
+			</tr>
+			<tr>
+				<td>a+b</td>
+				<td>{$= "a" 1 @tparamGet "b"2 @tparamGet + $}</td>
+			</tr>
+		</table>
+	</body>
+</html>

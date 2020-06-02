@@ -1,0 +1,6 @@
+Voting for favorite band
+From following bands, which is your favorite?
+/WEB-INF/pollBands.txt;
+Voting for favorite actor
+Choose favorite actor!
+/WEB-INF/pollActors.txt

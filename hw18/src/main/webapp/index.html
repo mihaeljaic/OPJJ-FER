@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Galerija</title>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/htmlescaping.js"></script>
+	<script type="text/javascript"><!--
+		
+		trenTag = "";
+		$(document).ready(
+			function() {
+				$.ajax(
+					{
+						url: "servleti/tagovi",
+						dataType: "json",
+						success: function(data) {
+							var tagovi = data;
+							var html = "";
+							for (var i = 0; i < tagovi.length; i++) {
+								html += "<button id='" + tagovi[i] + "'>" + tagovi[i] + "</button><br>";
+							}
+							
+							$("#gumbi").html(html);
+							
+							var funcs = {};
+							
+							function createFunc(i) {
+								return function() {
+									trenTag = tagovi[i];
+									ucitajSlike();
+								}
+							}
+							for (var i = 0; i < tagovi.length; i++) {
+								funcs[i] = createFunc[i];
+							}
+							for (var i = 0; i < tagovi.length; i++) {
+								document.getElementById(tagovi[i]).onclick = funcs[i];
+							}
+							
+						},
+						async: false
+					}			
+				);
+			}
+		)
+		
+		function ucitajSlike() {
+			$.ajax(
+				{
+					url: "servleti/pripremiThumb",
+					async: false,
+					type: "POST",
+					data: {
+						tagslike: trenTag
+					},
+					dataType: "json",
+					success: function(data) {
+						var slike = data;
+						var html = "";
+						for (var i = 0; i < slike.length; i++) {
+							html += "<img alt='slika' src='/galerija/servleti/dohvatiThumb?staza=" + htmlEscape(slike[i]) + "' width='150' height='150'>";
+						}
+						
+						$("thumb").html(html);
+						$("slika").html("");
+						
+						for (var i = 0; i < slike.length; i++) {
+							document.getElementById(slike[i]).onclick = function() {
+								ucitajSliku(slike[i]);
+							}
+						}
+					}
+				}
+			);
+		}
+		
+		function ucitajSliku(slika) {
+			var html = "<img alt='slika' src='/servleti/ucitaj?staza=" + htmlEscape(slika) + "'>";
+			$("slika").html(html);
+		}
+	
+		//--></script>
+
+</head>
+<body>
+	
+	<div id="gumbi">&nbsp;</div>
+	<div id="slika">&nbsp;</div>
+	<div id="thumb">&nbsp;</div>
+	
+</body>
+</html>

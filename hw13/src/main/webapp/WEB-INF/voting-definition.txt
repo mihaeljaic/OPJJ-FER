@@ -1,0 +1,9 @@
+35	The Beatles	https://www.youtube.com/watch?v=z9ypq6_5bsg
+30	The Platters	https://www.youtube.com/watch?v=H2di83WAOhU
+27	The Beach Boys	https://www.youtube.com/watch?v=2s4slliAtQU
+31	The Four Seasons	https://www.youtube.com/watch?v=y8yvnqHmFds
+29	The Marcels	https://www.youtube.com/watch?v=qoi3TH59ZEs
+33	The Everly Brothers	https://www.youtube.com/watch?v=tbU3zdAgiX8
+32	The Mamas And The Papas	https://www.youtube.com/watch?v=N-aK6JnyFmk
+28	Linkin Park	https://www.youtube.com/watch?v=kXYiU_JCYtU
+34	Bon Jovi	https://www.youtube.com/watch?v=vx2u5uUu3DE
